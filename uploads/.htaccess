@@ -1,0 +1,6 @@
+# Files here are served only through read.php after a loan check.
+Options -Indexes
+Require all denied
+<IfModule !mod_authz_core.c>
+    Deny from all
+</IfModule>
